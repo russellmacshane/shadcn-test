@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/alert"
 import { Button } from "@/components/ui/button"
 import { ArrowUpIcon, InfoIcon } from "lucide-react"
+import { Badge } from "@/components/ui/badge"
 
 function MainButtons() {
   return (
@@ -20,7 +21,7 @@ function MainButtons() {
         </Button>
       </div>
       <div>
-        <Alert variant="destructive">
+        <Alert>
           <InfoIcon />
           <AlertTitle>Hello Russ</AlertTitle>
           <AlertDescription>This is my Alert Description!!!</AlertDescription>
@@ -28,6 +29,9 @@ function MainButtons() {
             <Button variant="outline">Enabled</Button>
           </AlertAction>
         </Alert>
+      </div>
+      <div>
+        <Badge>Hi Jereme!</Badge>
       </div>
     </div>
   )
